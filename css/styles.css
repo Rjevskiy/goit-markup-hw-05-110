@@ -630,7 +630,30 @@ max-width: 320px;}
     align-items: center;
     gap: 72px;}
 
-    
+.footer-logo{margin: auto;}
+
+.footer-i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.footer-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;}
+
+.footer-div-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;}
+
+
 @media screen and (min-width: 768px) {
     .div-footer {
         flex-direction: row;
@@ -640,8 +663,15 @@ max-width: 320px;}
         padding-left: 108px;}
     }
 
-.footer-l {
-    max-width: 264px;}
+.footer-l {display: flex;
+    flex-direction: column;}
+
+.footer-item{font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;}    
+
+
 
 @media screen and (min-width: 1158px) {
     .footer-l{padding-top: 100px;
@@ -657,7 +687,7 @@ max-width: 320px;}
     letter-spacing: 0.03em;
     color: #4d5ae5;
     display: inline-block;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     text-transform: uppercase;
     
     
@@ -675,21 +705,13 @@ max-width: 320px;}
 
 .footer-item {
     color: #f4f4fd;
-    width: 264px;
-    text-align: start;
-}
+    width: 264px;}
+    
 
 .footer-i {
     color: #fff;
 }
 
-.footer-p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    margin-bottom: 16px;    }
 
 .foter-ul {
     display: flex;
@@ -720,16 +742,6 @@ max-width: 320px;}
 }
 
 
-.footer-div-subscribe {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    }
-
 .footer-form {
     display: flex;
     gap: 16px;
@@ -753,7 +765,7 @@ max-width: 320px;}
 .foter-form-input {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     background: #2e2f42;
     padding-left: 16px;
