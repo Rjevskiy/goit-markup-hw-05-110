@@ -29,14 +29,7 @@ button {cursor: pointer;}
     sans-serif;background: transparent;color: #434455;}
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 736px;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-}
+    .container {max-width: 768px;}}
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -68,11 +61,7 @@ button {cursor: pointer;}
 
 .header-container{display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 16px;
-    padding-right: 16px;}
+    align-items: center;}
   
 .page-navigation{display: flex;
     align-items: center;}  
@@ -84,7 +73,9 @@ button {cursor: pointer;}
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5; }
+    color: #4d5ae5; 
+    padding-top: 16px;
+    padding-bottom: 16px;}
 
 
 .logo-text-roboto{font-family: "Raleway", sans-serif;
@@ -167,21 +158,21 @@ button {cursor: pointer;}
     
 .address {
     display: contents;
-    color: #434455;
     font-style: normal;}
 
 .addres-container {
-        display: flex;
-        flex-direction: column;
-        column-gap: 40px;}
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 12px;}
 
-.address-item {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.address-item {color: #434455;}
+     
         
 .address-item:hover,
 .address-item:focus {
@@ -213,8 +204,7 @@ button {cursor: pointer;}
 
 .hero {display: flex;
 padding-top: 72px;
-padding-left: 52px;
-padding-right: 52px;
+padding-bottom: 72px;
 margin-left: auto;
 margin-right: auto;
 background-color:#2e2f42;
@@ -224,9 +214,7 @@ background-size: cover;
 background-position: center;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 url("../images/mobile/dark-bgmob@1x.jpg");
-max-width: 320px;
-height: 432px;
-}
+max-width: 320px;}
 /*
 @media screen and (min-resolution: 192dpi) {
 .hero{
@@ -236,12 +224,11 @@ height: 432px;
 
 
 .hero-page {
-    
+    max-width: 216px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    max-width: 496px;
     color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -303,14 +290,15 @@ height: 432px;
     margin-bottom: 36px;
 }
 .hero {
+    display:block;
     justify-content: center;
     padding-top: 112px;
-    padding-bottom: 188px;
+    padding-bottom: 112px;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/tablet/dark-bg-dark-bg-tablet@1x.jpg");
-    max-width: 768px;
-    height: 436px;
-}
+    max-width: 768px;}
+
+
 @media screen and (min-resolution: 192dpi) {
 .hero {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url("../images/tablet/dark-bg-dark-bg-tablet@2x.jpg");}}
 }
@@ -318,20 +306,17 @@ height: 432px;
 @media screen and (min-width: 1158px) {
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/desctop/people-office-mobile-dark-bgmob@1x.jpg");
-    max-width: 1158px;
-    height: 600px;
-    padding-top: 188px;}
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;}
 }
 
-.hero-page{
-    margin-bottom: 48px;
-}
 
 
 /*===========benefits page===============*/ 
 
-.icons-container{margin-top: 95px;
-    margin-bottom: 96px;}
+.icons-container{padding-top: 96px;
+    padding-bottom: 96px;}
 
 .visually-hidden {}
 
@@ -347,7 +332,8 @@ height: 432px;
     line-height: 1.11111;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;}
+    color: #2e2f42;
+    margin-bottom: 8px;}
 
 .benefits-link{font-weight: 500;
     font-size: 16px;
@@ -384,15 +370,25 @@ height: 432px;
 
 .icons-container{
     margin-top: 120px;
-    margin-bottom: 120px;}    
+    margin-bottom: 120px;}   
+    
+.benefits-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;}
+
+.benefits-link{
+    font-weight: 400;}
 }
 
 
 /*============our team============*/
 
-.our-team-container{background: #f4f4fd;
+.ourteam-container{background: #f4f4fd;
+    display: flex;
     padding-top: 96px;
-    padding-bottom: 24px;}    
+    padding-bottom:96px;
+    gap: 72px;}    
 
 .ourteam-h{font-weight: 700;
     font-size: 36px;
@@ -400,21 +396,31 @@ height: 432px;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 72px;}     
+    margin-bottom: 72px;
+    width: 264px;}     
 
-.ourteam-ul{padding-left: 12px;}
+.ourteam-ul{display: flex;
+    flex-direction: column;
+    gap: 72px;}
+
+.image-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 
 .ourteam-li {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     max-width: 264px;
+   
 }
-
+ 
 .ourteam-item {
     text-align: center;
     margin-bottom: 8px;
-    margin-top: 32px;
+    
 }
 
 .ourteam-link {
@@ -423,6 +429,7 @@ height: 432px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .ourteam-icon-ul {
@@ -430,16 +437,14 @@ height: 432px;
     flex-direction: row;
     gap: 24px;
     justify-content: center;
-    margin-top: 8px;
-    padding-bottom: 32px;
-    margin-bottom: 72px;
+    
 }
 
-.our-team-list-icon {
+.ourteam-list-icon {
     fill: #f4f4fd;
 }
 
-.our-team-hover {
+.ourteam-hover {
     width: 40px;
     height: 40px;
 }
@@ -462,6 +467,10 @@ height: 432px;
 
 
 @media screen and (min-width: 768px) {
+
+.ourteam-h{margin: auto;
+    margin-bottom: 72px;}
+
 .ourteam-ul {
     padding-left: 12px;
     display: flex;
@@ -473,7 +482,8 @@ height: 432px;
     padding-left: 0;
     justify-content: center;}
 
-.our-team-container {
+.ourteam-container {
+    display: block;
     padding-top: 96px;
     padding-bottom: 96px;}
 
@@ -487,7 +497,7 @@ height: 432px;
 
 
 @media screen and (min-width: 1158px) {
-.our-team-container{
+.ourteam-container{
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -1059,7 +1069,7 @@ height: 432px;
 /*============ Mobil Menu===========*/    
 
 .mobile-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 99999;
     left: 0;
