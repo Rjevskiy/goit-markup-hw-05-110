@@ -632,6 +632,10 @@ max-width: 320px;}
 
 .footer-logo{margin: auto;}
 
+.footer-l {
+    display: flex;
+    flex-direction: column;}
+
 .footer-i {
     display: flex;
     flex-direction: column;
@@ -669,6 +673,7 @@ max-width: 320px;}
     letter-spacing: 0.04em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
+    opacity: 0.3;
 }
 .footer-btn {
     border-radius: 4px;
@@ -695,50 +700,12 @@ max-width: 320px;}
     margin-left: 16px;
 }
 
-
-@media screen and (min-width: 768px) {
-.div-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 72px 24px;
-    padding-left: 108px;}
-    
-
-.footer-l {display: flex;
-    flex-direction: column;}
-
-.footer-item{font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;}    
-
 .footer-form {
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 24px;
-}
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;}
 
-.foter-form-input{width: 264px;}
-
-.footer-form-field-label {
-    margin-top: 16px;
-}
-
-.foter-form-wrapper {}
-
-
-.foter-form-input::placeholder {
-    color: #FFFFFF;
-}
-
-}
-
-@media screen and (min-width: 1158px) {
-    .footer-l{padding-top: 100px;
-        padding-bottom: 100px;
-        margin-right: 120px}
-}
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -803,14 +770,47 @@ max-width: 320px;}
 }
 
 
+
+@media screen and (min-width: 768px) {
+.div-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 72px 24px;
+    padding-left: 108px;}
+
+.footer-logo {
+    margin: 0;}
+
+.footer-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;}
+
+.footer-i {
+    align-items: start;}
+
+.footer-div-subscribe {
+    text-align: left;}
+
 .footer-form {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;}
+
+.foter-form-input {
+    width: 264px;}
+
+.footer-form-field-label {
+    margin-top: 16px;}
+
+.foter-form-wrapper {}
+
+
+.foter-form-input::placeholder {
+    color: #FFFFFF;}
 }
-
-
 
 
 
@@ -831,8 +831,12 @@ max-width: 320px;}
     max-width: 1158px;
     padding: 0 0;
     margin: 0 auto;}
-}
 
+.footer-l {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 120px}
+}
 
 /*=============Backdrop============*/
 
