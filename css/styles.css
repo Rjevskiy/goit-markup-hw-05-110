@@ -1151,11 +1151,19 @@ max-width: 320px;}
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;}
 
+.mobile-menu-list-link-1{font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #404bbf;}
+
 .mobile-menu-list-link{font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111;
-    letter-spacing: 0.02em;}    
+    letter-spacing: 0.02em;
+    color: #2e2f42;}    
 
 .mobile-menu-nav{margin-bottom: auto;}
 
@@ -1169,14 +1177,18 @@ max-width: 320px;}
     letter-spacing: 0.02em;
     color: #434455;}
 
-.mobile-ourteam-div{}
+.mobile-address-item{font-style: normal;
+    color: #434455;}
+
+.mobile-address-item-1{font-style: normal;
+    color: #4d5ae5;}
 
 .mobile-ourteam-icon-ul {
     display: flex;
     flex-direction: row;
     gap: 40px;
     justify-content: center;
-    padding-top: 48px;}
+    margin-top: 48px;}
 
 .mobile-our-team-list-icon {
     fill: #f4f4fd;
