@@ -1123,6 +1123,11 @@ max-width: 320px;}
     position: relative;
     padding-top: 72px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column ;
+    height: 100%;
+    padding-top: 72px;
+    padding-bottom: 40px;
 }
 
 .mobile-menu-close-btn{
@@ -1138,22 +1143,23 @@ max-width: 320px;}
     padding: 0;
     stroke: #2e2f42;}
 
-.mobile-menu-list{font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    .mobile-menu-list{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    font-size: 36px;
-    line-height: 1.11111;
-    letter-spacing: 0.02em;
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;}
 
-.mobile-menu-list-item{}    
+.mobile-menu-list-link{font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;}    
 
-.mobile-menu-nav{}
+.mobile-menu-nav{margin-bottom: auto;}
 
-.footer-addres-container{font-family: "Roboto", sans-serif;
+.mobile-addres-container{font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -1161,28 +1167,27 @@ max-width: 320px;}
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #434455;
-    padding-top: 168px;}
+    color: #434455;}
 
-.footer-ourteam-div{}
+.mobile-ourteam-div{}
 
-.footer-ourteam-icon-ul {
+.mobile-ourteam-icon-ul {
     display: flex;
     flex-direction: row;
     gap: 40px;
     justify-content: center;
     padding-top: 48px;}
 
-.footer-our-team-list-icon {
+.mobile-our-team-list-icon {
     fill: #f4f4fd;
 }
 
-.footer-our-team-hover {
+.mobile-our-team-hover {
     width: 40px;
     height: 40px;
 }
 
-.footer-ourteam-hover-link {
+.mobile-ourteam-hover-link {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1193,8 +1198,8 @@ max-width: 320px;}
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-ourteam-hover-link:hover,
-.footer-ourteam-hover-link:focus {
+.mobile-ourteam-hover-link:hover,
+.mobile-ourteam-hover-link:focus {
     background-color: #404bbf;
 }
 
