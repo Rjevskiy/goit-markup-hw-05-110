@@ -194,7 +194,12 @@ button {cursor: pointer;}
 
 .menu{margin-left: 76px;}
 
-.addres-container{flex-direction: row;}
+.addres-container{
+    flex-direction: row;
+    gap: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;}
 
 .page-navigation{display: flex;}
 }
@@ -309,7 +314,10 @@ max-width: 320px;}
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;}
+
+.hero-page{margin-bottom: 48px;}
 }
+
 
 
 
@@ -369,8 +377,8 @@ max-width: 320px;}
     flex-wrap: nowrap;}
 
 .icons-container{
-    margin-top: 120px;
-    margin-bottom: 120px;}   
+    padding-top: 120px;
+    padding-bottom: 120px;}   
     
 .benefits-item{
     font-weight: 500;
@@ -397,7 +405,7 @@ max-width: 320px;}
     text-align: center;
     color: #2e2f42;
     margin-bottom: 72px;
-    width: 264px;}     
+    }     
 
 .ourteam-ul{display: flex;
     flex-direction: column;
@@ -468,7 +476,7 @@ max-width: 320px;}
 
 @media screen and (min-width: 768px) {
 
-.ourteam-h{margin: auto;
+.ourteam-h{
     margin-bottom: 72px;}
 
 .ourteam-ul {
@@ -539,7 +547,7 @@ max-width: 320px;}
 
 .op-div{padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 16px;}
+    padding: 32px 16px;}
 
 .op-item{margin-bottom: 8px;
     font-weight: 500;
@@ -562,9 +570,6 @@ max-width: 320px;}
     column-gap: 22px;
     row-gap: 72px;}
 
-.op-item{padding-left: 16px;}
-
-.op-link{padding-left: 16px;}
 
 .ourportfolio{width: 356px;
     height: 300px;}
@@ -657,6 +662,8 @@ max-width: 320px;}
     color: #fff;
     text-align: center;}
 
+.footer-subscribe{margin-bottom: 16px;}
+
 .foter-form-input {
     border: 1px solid #fff;
     border-radius: 4px;
@@ -729,7 +736,12 @@ max-width: 320px;}
 
 .footer-item {
     color: #f4f4fd;
-    width: 264px;}
+    width: 264px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;}
     
 .footer-i {color: #fff;}
 
@@ -819,15 +831,14 @@ max-width: 320px;}
 
 .footer-l {
     margin-right: 120px}
-}
+
 
 .footer-logo{
     margin-bottom: 16px;}
 
 .footer-div-subscribe {
-    margin-left: auto;
+    margin-left: auto;}
 }
-
 /*=============Backdrop============*/
 
 .backdrop {
