@@ -1208,7 +1208,6 @@ max-width: 320px;}
     display: flex;
     flex-direction: row;
     gap: 40px;
-    justify-content: center;
     margin-top: 48px;}
 
 .mobile-our-team-list-icon {
